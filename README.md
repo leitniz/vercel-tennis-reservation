@@ -1,23 +1,8 @@
-# 🎾 Tennis Reservation - Vercel Template
+# 🎾 Tennis Reservation - Vercel
 
-Sistema automatizado de reservas para Nacional Club Social.
+## 🚀 Deploy
 
-## 📦 Contenido
-
-Este template incluye todo lo necesario para deployar con Vercel:
-
-```
-vercel-template/
-├── api/
-│   └── reserve.js      # Función serverless
-├── vercel.json         # Configuración de Vercel
-├── package.json        # Dependencias (ninguna)
-└── README.md           # Esta guía
-```
-
-## 🚀 Deploy Rápido
-
-### Método 1: Vercel CLI (3 minutos)
+### Método 1: Vercel CLI
 
 ```bash
 # 1. Instalar Vercel CLI
@@ -33,24 +18,7 @@ cd vercel-template
 vercel --prod
 ```
 
-### Método 2: Vercel Dashboard (5 minutos)
-
-1. Ir a https://vercel.com/new
-2. Arrastrar la carpeta `vercel-template`
-3. Click "Deploy"
-
-## ⚙️ Configurar Variables de Entorno
-
-**DESPUÉS del deploy:**
-
-1. Vercel Dashboard → Tu proyecto → Settings → Environment Variables
-2. Agregar:
-   - `EMAIL` = tu_email@nacionalclub.uy
-   - `PASSWORD` = tu_contraseña
-   - `GUEST_ID` = 12345678
-3. Redeploy
-
-## 🧪 Probar
+## 🧪 Test
 
 ```bash
 curl https://tu-proyecto.vercel.app/api/reserve?action=CHECK_SLOTS&dayOfWeek=1
@@ -77,7 +45,3 @@ curl https://tu-proyecto.vercel.app/api/reserve?action=CHECK_SLOTS&dayOfWeek=1
 
 Ver `VERCEL_SETUP_COMPLETE.md` para guía detallada.
 
-## ✅ Eso es Todo
-
-Sin dependencias, sin compilación, sin configuración compleja.
-Solo deploy y funciona.
